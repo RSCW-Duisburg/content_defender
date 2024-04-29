@@ -70,7 +70,7 @@ class DatamapDataHandlerHookTest extends AbstractFunctionalTestCase
                     $queryBuilder->createNamedParameter('Header')
                 )
             )
-            ->execute()
+            ->executeQuery()
             ->fetchOne();
 
         $this->assertSame(1, $count);
@@ -197,7 +197,7 @@ class DatamapDataHandlerHookTest extends AbstractFunctionalTestCase
                     $queryBuilder->createNamedParameter(0)
                 )
             )
-            ->execute()
+            ->executeQuery()
             ->fetchOne();
 
         $this->assertSame(3, $count);
@@ -240,7 +240,7 @@ class DatamapDataHandlerHookTest extends AbstractFunctionalTestCase
                     $queryBuilder->createNamedParameter('Text & Media')
                 )
             )
-            ->execute()
+            ->executeQuery()
             ->fetchOne();
 
         $this->assertSame(0, $count);
@@ -279,7 +279,7 @@ class DatamapDataHandlerHookTest extends AbstractFunctionalTestCase
                     $queryBuilder->createNamedParameter('New Header')
                 )
             )
-            ->execute()
+            ->executeQuery()
             ->fetchOne();
 
         $this->assertSame(1, $count);
@@ -316,7 +316,7 @@ class DatamapDataHandlerHookTest extends AbstractFunctionalTestCase
                     $queryBuilder->createNamedParameter('New Header')
                 )
             )
-            ->execute()
+            ->executeQuery()
             ->fetchOne();
 
         $this->assertSame(1, $count);

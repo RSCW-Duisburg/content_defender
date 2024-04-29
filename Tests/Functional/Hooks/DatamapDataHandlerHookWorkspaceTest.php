@@ -84,7 +84,7 @@ class DatamapDataHandlerHookWorkspaceTest extends AbstractFunctionalTestCase
                     $queryBuilder->createNamedParameter('New Header DEV')
                 )
             )
-            ->execute()
+            ->executeQuery()
             ->fetchOne();
 
         $this->assertSame(1, $count);

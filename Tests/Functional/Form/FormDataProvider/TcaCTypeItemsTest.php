@@ -53,6 +53,7 @@ class TcaCTypeItemsTest extends AbstractFunctionalTestCase
         $formDataCompilerInput = $this->mergeDefaultValuesWithCompilerInput(
             [
                 'command' => 'new',
+                'request' => $GLOBALS['TYPO3_REQUEST'] ?? null,
                 'tableName' => 'tt_content',
                 'vanillaUid' => 2,
             ],
@@ -66,7 +67,7 @@ class TcaCTypeItemsTest extends AbstractFunctionalTestCase
 
         $formDataGroup = new TcaDatabaseRecord();
         $formDataCompiler = new FormDataCompiler($formDataGroup);
-        $result = $formDataCompiler->compile($formDataCompilerInput);
+        $result = $formDataCompiler->compile($formDataCompilerInput, $formDataGroup);
 
         $items = array_values($result['processedTca']['columns']['CType']['config']['items']);
 
@@ -82,6 +83,7 @@ class TcaCTypeItemsTest extends AbstractFunctionalTestCase
         $formDataCompilerInput = $this->mergeDefaultValuesWithCompilerInput(
             [
                 'command' => 'new',
+                'request' => $GLOBALS['TYPO3_REQUEST'] ?? null,
                 'tableName' => 'tt_content',
                 'vanillaUid' => 2,
             ],
@@ -95,7 +97,7 @@ class TcaCTypeItemsTest extends AbstractFunctionalTestCase
 
         $formDataGroup = new TcaDatabaseRecord();
         $formDataCompiler = new FormDataCompiler($formDataGroup);
-        $result = $formDataCompiler->compile($formDataCompilerInput);
+        $result = $formDataCompiler->compile($formDataCompilerInput, $formDataGroup);
 
         $items = array_values($result['processedTca']['columns']['tx_simpleselectboxsingle']['config']['items']);
 

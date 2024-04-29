@@ -43,7 +43,7 @@ class WizardItemsHookTest extends AbstractFunctionalTestCase
     /**
      * @return array
      */
-    public function manipulateWizardItemsFiltersWizardItemsDataProvider()
+    public static function manipulateWizardItemsFiltersWizardItemsDataProvider()
     {
         return [
             'Border (all)' => [
