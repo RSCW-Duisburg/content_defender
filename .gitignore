@@ -1,6 +1,7 @@
 /.Build/
 /.idea/
 /.Log/
+/.phpunit.cache/
 /config/
 /var/
 /.php_cs
