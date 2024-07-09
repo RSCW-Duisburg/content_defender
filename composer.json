@@ -29,7 +29,7 @@
         "phpspec/prophecy": "^1.12.1",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpunit/phpunit": "^9.5 || ^10.1",
-        "typo3/cms-fluid-styled-content": "^11.5 || ^12.4 || ^13,
+        "typo3/cms-fluid-styled-content": "^11.5 || ^12.4 || ^13",
         "typo3/cms-indexed-search": "^11.5 || ^12.4 || ^13",
         "typo3/cms-workspaces": "^11.5 || ^12.4 || ^13",
         "typo3/minimal": "^11.5 || ^12.4 | ^13",
